@@ -1,0 +1,12 @@
+{
+    "name": "source_collection-connector",
+    "config": {
+        "connector.class" : "io.debezium.connector.mongodb.MongoDbConnector",
+        "mongodb.name" : "dbserver1",
+        "mongodb.hosts" : "rs0/mongodb:27017",
+        "tasks.max" : "1",
+        "mongodb.user" : "dbuser",
+        "mongodb.password" : "dbpass",
+        "collection.include.list" : "gamesdb.source_collection"
+    }
+}

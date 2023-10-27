@@ -1,0 +1,9 @@
+{
+  "name": "source_collection-connector",
+  "config": {
+    "connector.class": "com.mongodb.kafka.connect.MongoSourceConnector",
+    "connection.uri": "mongodb://dbuser:dbpass@mongodb:27017",
+    "database": "gamesdb",
+    "collection": "source_collection"
+  }
+}

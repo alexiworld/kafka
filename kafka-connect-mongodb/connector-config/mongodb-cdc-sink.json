@@ -1,0 +1,11 @@
+{
+  "name": "sink_collection-connector",
+  "config": {
+    "connector.class": "com.mongodb.kafka.connect.MongoSinkConnector",
+    "change.data.capture.handler": "com.mongodb.kafka.connect.sink.cdc.mongodb.ChangeStreamHandler",
+    "topics": "gamesdb.source_collection",
+    "connection.uri": "mongodb://dbuser:dbpass@mongodb:27017",
+    "database": "gamesdb",
+    "collection": "sink_collection"
+  }
+}
