@@ -21,8 +21,8 @@ flowchart LR
     end
   end
   subgraph connect
-    source-connector[source_collection-connector\ndebezuim]
-    sink-connector[sink_collection-connector\nmongo debezium CDC handler]
+    source_collection-connector[source_collection-connector\ndebezuim]
+    sink_collection-connector[sink_collection-connector\nmongo debezium CDC handler]
   end
   source_collection --> source_collection-connector
   source_collection-connector --> topic
